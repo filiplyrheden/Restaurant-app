@@ -2,6 +2,7 @@
 
 .swiper-slide {
   margin: 0 auto;
+  padding-left: 16px;
   width: 78%;
 
   &--main {
@@ -25,10 +26,14 @@
 
       & > h2 {
         color: $secondary-color;
-        font-size: px-to-rem(50);
-        line-height: 58.59px;
+        font-size: $fs-md;
         text-align: left;
         text-transform: uppercase;
+
+        @include laptop {
+          font-size: px-to-rem(50);
+          line-height: 58.59px;
+        }
 
         & > span {
           color: $primary-color;
@@ -38,12 +43,13 @@
 
     &--image {
       max-height: px-to-rem(292);
+      overflow: hidden;
       width: 40%;
 
       img {
         display: block;
-        height: auto;
-        max-width: 100%;
+        height: 100%;
+        width: 100%;
       }
     }
 
@@ -52,38 +58,55 @@
 
       > a {
         background-color: $primary-color;
-        border-radius: px-to-rem(10);
+        border-radius: px-to-rem(8);
         color: $btn-primary-color;
         display: block;
         font-family: Roboto, sans-serif;
-        font-size: px-to-rem(25);
-        font-weight: 700;
-        min-width: px-to-rem(200);
-        padding: px-to-rem(14);
+        font-size: $fs-sm;
+        font-weight: 500;
+        min-width: px-to-rem(100);
+        padding: px-to-rem(6);
         text-align: center;
         text-decoration: none;
+
+        @include laptop {
+          border-radius: px-to-rem(10);
+          font-size: px-to-rem(25);
+          font-weight: 700;
+          min-width: px-to-rem(200);
+          padding: px-to-rem(14);
+        }
       }
 
       > p {
         color: $secondary-color;
-        font-size: px-to-rem(25);
-        font-weight: 400;
-        line-height: 29.33px;
         margin: 0 px-to-rem(10);
         padding: px-to-rem(10);
+
+        @include laptop {
+          font-size: px-to-rem(25);
+          font-weight: 400;
+          line-height: 29.33px;
+        }
       }
     }
   }
 
   &--socials {
+    display: hidden;
     max-width: fit-content;
-    padding: px-to-rem(5);
+    padding: px-to-rem(15);
+    padding-left: 20px;
     width: fit-content;
 
     & > div {
       align-items: flex-end;
       gap: px-to-rem(20);
       justify-content: space-between;
+    }
+
+    @include tablet {
+      display: block;
     }
   }
 }

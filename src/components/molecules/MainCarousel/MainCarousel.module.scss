@@ -2,11 +2,14 @@
 
 .swiper {
   box-sizing: border-box;
-  height: fit-content;
-  min-height: px-to-rem(345);
-  padding: px-to-rem(10);
+  display: none;
+
+  //   height: fit-content;
+  //   min-height: px-to-rem(345);
+  //   padding: px-to-rem(10);
   text-align: center;
-  width: px-to-rem(1166);
+
+  //   width: px-to-rem(1166);
 
   & > div:last-of-type {
     margin-left: auto;
@@ -20,5 +23,9 @@
         background: $primary-color;
       }
     }
+  }
+
+  @include laptop {
+    display: block;
   }
 }

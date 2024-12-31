@@ -1,5 +1,6 @@
 import styles from "./CarouselSlide.module.scss";
 import React from "react";
+import { SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import Image from "next/image";
 import SocialMediaBar from "../social-media-bar/SocialMediaBar";
@@ -18,6 +19,7 @@ interface CarouselSlideProps {
 }
 
 const CarouselSlide: React.FC<CarouselSlideProps> = ({
+  id,
   image,
   dishname,
   price,
@@ -25,8 +27,8 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
   socialMedia,
 }) => {
   return (
-    <>
-      <div className={styles["swiper-slide"]}>
+    <SwiperSlide key={id}>
+      <div className={styles[""]}>
         <div className={styles["swiper-slide--main"]}>
           <div className={styles["swiper-slide--main--headings"]}>
             <h4>Best In Town</h4>
@@ -35,13 +37,7 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
             </h2>
           </div>
           <div className={styles["swiper-slide--main--image"]}>
-            <Image
-              src={image}
-              alt={dishname}
-              width={438}
-              height={292}
-              objectFit="contain"
-            />
+            <Image src={image} alt={dishname} width={438} height={292} />
           </div>
         </div>
         <div className={styles["swiper-slide--main--cta"]}>
@@ -52,9 +48,9 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
         </div>
       </div>
       <div className={styles["swiper-slide--socials"]}>
-        <SocialMediaBar size={"small"} socialMedias={socialMedia} />
+        <SocialMediaBar size={"medium"} socialMedias={socialMedia} />
       </div>
-    </>
+    </SwiperSlide>
   );
 };
 
