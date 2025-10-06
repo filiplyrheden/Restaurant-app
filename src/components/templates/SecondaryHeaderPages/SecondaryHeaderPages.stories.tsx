@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/react";
+import { Meta } from "@storybook/nextjs";
 import SecondaryHeaderPages from "./SecondaryHeaderPages";
 
 const secondaryHeaderPages: Meta<typeof SecondaryHeaderPages> = {

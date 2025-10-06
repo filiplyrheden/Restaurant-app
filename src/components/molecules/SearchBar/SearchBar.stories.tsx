@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/react";
+import { Meta } from "@storybook/nextjs";
 import React, { SetStateAction } from "react";
 import SearchBar from "./SearchBar";
 

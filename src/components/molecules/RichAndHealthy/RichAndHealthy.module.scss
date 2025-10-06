@@ -17,6 +17,7 @@
   }
 
   &__subheading {
+    @include margin-bottom("sm"); // Move this to the top
     font-size: $fs-md;
     font-weight: $fw-semibold;
     text-align: center;
@@ -25,8 +26,6 @@
       font-size: $fs-lg;
       font-weight: $fw-bold;
     }
-
-    @include margin-bottom("sm");
   }
 
   &__inner-box {
@@ -46,14 +45,14 @@
     max-width: px-to-rem(510);
 
     @include laptop {
+      @include margin-bottom("lg"); // Move this to the top of the laptop block
       font-size: $fs-xxl;
       font-weight: $fw-bold;
-
-      @include margin-bottom("lg");
     }
   }
 
   &__text {
+    @include margin-bottom("xs"); // Move this to the top
     font-size: $fs-sm;
 
     @include laptop {
@@ -61,8 +60,6 @@
       line-height: 1.4;
       max-width: px-to-rem(750);
     }
-
-    @include margin-bottom("xs");
   }
 
   &__feature-and-contact {
@@ -80,9 +77,10 @@
     gap: 30px;
 
     @include laptop {
+      @include padding-vertical(
+        "lg"
+      ); // Move this to the top of the laptop block
       gap: 109px;
-
-      @include padding-vertical("lg");
     }
   }
 
@@ -132,9 +130,8 @@
     text-transform: uppercase;
 
     @include laptop {
-      @include padding-horizontal(xl);
-      @include padding-vertical(xs);
-
+      @include padding-horizontal("xl"); // Add quotes around xl
+      @include padding-vertical("xs"); // Add quotes around xs
       font-size: $fs-xxl;
       font-weight: $fw-bold;
     }

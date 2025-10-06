@@ -28,9 +28,9 @@ const DeliverySection = () => {
           src="/images/image_delivery_section.png"
           alt={"food delivery"}
           className={styles["delivery-section__image"]}
-          width="447"
-          objectFit="contain"
-          height="330"
+          width={447}
+          height={330}
+          style={{ objectFit: "contain" }}
         />
       </div>
     </div>

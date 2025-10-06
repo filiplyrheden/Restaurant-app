@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/react";
+import { Meta } from "@storybook/nextjs";
 import PopularDishesSection from "./PopularDishesSection";
 
 const popularDishesSection: Meta<typeof PopularDishesSection> = {
