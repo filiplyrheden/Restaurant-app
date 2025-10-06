@@ -1,12 +1,5 @@
-import AuthSection from "@/components/templates/AuthSection";
-import React from "react";
+import AuthSection from '@/components/templates/AuthSection';
 
-const page = () => {
-  return (
-    <>
-      <AuthSection />
-    </>
-  );
-};
-
-export default page;
+export default function LoginPage() {
+  return <AuthSection initialMode="login" />;
+}
