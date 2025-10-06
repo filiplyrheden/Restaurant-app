@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/react";
+import { Meta } from "@storybook/nextjs";
 import MainCarousel from "./MainCarousel";
 
 const slides = Array.from({ length: 5 }, (item, index) => ({

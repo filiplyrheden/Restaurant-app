@@ -1,4 +1,4 @@
-import { Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/nextjs";
 import MemberCard from "./MemberCard";
 
 export const Default: StoryObj<typeof MemberCard> = {

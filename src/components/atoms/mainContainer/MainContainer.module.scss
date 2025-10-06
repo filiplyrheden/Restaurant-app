@@ -3,7 +3,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: px-to-rem(50);
+  gap: 3.125rem; /* 50px converted to rem */
   margin: 0 auto;
-  max-width: px-to-rem(1220);
+  max-width: 76.25rem; /* 1220px converted to rem */
 }
