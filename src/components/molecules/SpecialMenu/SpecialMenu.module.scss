@@ -12,6 +12,7 @@
 
     @include laptop {
       @include margin-bottom("xxl"); // Keep only this one, remove the duplicate
+
       font-size: $fs-xxl;
       font-weight: $fw-bold;
     }
@@ -19,6 +20,7 @@
 
   &__meals-container {
     @include center; // Move this to the top
+
     flex-wrap: wrap;
     gap: 16px;
 

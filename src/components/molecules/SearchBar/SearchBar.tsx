@@ -5,7 +5,7 @@ import Button from "../../atoms/button";
 import styles from "./SearchBar.module.scss";
 
 interface SearchBarProps {
-  onSearch: (_value: React.SetStateAction<string>) => void;
+  onSearch: (value: string) => void;
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
