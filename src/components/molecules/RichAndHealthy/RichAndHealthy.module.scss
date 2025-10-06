@@ -18,6 +18,7 @@
 
   &__subheading {
     @include margin-bottom("sm"); // Move this to the top
+
     font-size: $fs-md;
     font-weight: $fw-semibold;
     text-align: center;
@@ -46,6 +47,7 @@
 
     @include laptop {
       @include margin-bottom("lg"); // Move this to the top of the laptop block
+
       font-size: $fs-xxl;
       font-weight: $fw-bold;
     }
@@ -53,6 +55,7 @@
 
   &__text {
     @include margin-bottom("xs"); // Move this to the top
+
     font-size: $fs-sm;
 
     @include laptop {
@@ -80,6 +83,7 @@
       @include padding-vertical(
         "lg"
       ); // Move this to the top of the laptop block
+
       gap: 109px;
     }
   }
@@ -132,6 +136,7 @@
     @include laptop {
       @include padding-horizontal("xl"); // Add quotes around xl
       @include padding-vertical("xs"); // Add quotes around xs
+
       font-size: $fs-xxl;
       font-weight: $fw-bold;
     }

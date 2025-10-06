@@ -167,7 +167,14 @@ $spacing-xxl: 4.5rem; // 72px
 $spacing-xxxl: 6rem; // 96px
 
 @function px-to-rem($px-value) {
-  @return math.div($px-value, 16);
+  // Change 'unit' to 'math.unit' and use math.div()
+  $unitless-value: if(
+    math.unit($px-value) == "px",
+    math.div($px-value, 1px),
+    $px-value
+  );
+
+  @return math.div($unitless-value, 16) * 1rem;
 }
 
 /* =====  End of Spacing  ====== */

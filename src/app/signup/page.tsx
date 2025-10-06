@@ -1,4 +1,4 @@
-import AuthSection from '@/components/templates/AuthSection';
+import AuthSection from "@/components/templates/AuthSection";
 
 export default function SignupPage() {
   return <AuthSection initialMode="signup" />;
