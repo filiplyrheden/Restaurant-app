@@ -20,8 +20,8 @@ const DeliveryOrderCard: React.FC<DeliveryOrderCardProps> = ({
       <Image
         src="/images/food.png"
         alt={title}
-        width="100"
-        height="100"
+        width="50"
+        height="50"
         className={styles["delivery-card__image"]}
       />
     </div>
