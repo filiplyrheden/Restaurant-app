@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/react";
+import { Meta } from "@storybook/nextjs";
 import BigOfferSection from "./BigOfferSection";
 
 const bigOfferSection: Meta<typeof BigOfferSection> = {

@@ -40,7 +40,7 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
               alt={dishname}
               width={438}
               height={292}
-              objectFit="contain"
+              style={{ objectFit: "contain" }}
             />
           </div>
         </div>

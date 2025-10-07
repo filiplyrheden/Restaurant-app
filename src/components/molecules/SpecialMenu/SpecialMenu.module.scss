@@ -11,21 +11,21 @@
     text-transform: uppercase;
 
     @include laptop {
+      @include margin-bottom("xxl"); // Keep only this one, remove the duplicate
+
       font-size: $fs-xxl;
       font-weight: $fw-bold;
-
-      @include margin-bottom("xxl");
     }
   }
 
   &__meals-container {
+    @include center; // Move this to the top
+
     flex-wrap: wrap;
     gap: 16px;
 
     @include laptop {
       gap: map.get($spacing, md);
     }
-
-    @include center;
   }
 }

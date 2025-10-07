@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/react";
+import { Meta } from "@storybook/nextjs";
 import DeliverySection from "./DeliverySection";
 
 export const Default = () => {

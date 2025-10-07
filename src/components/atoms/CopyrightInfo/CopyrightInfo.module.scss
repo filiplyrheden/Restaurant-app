@@ -1,6 +1,8 @@
 @import "../../../foundations/sass/all";
 
 .copyright-info {
+  @include center;
+
   background-color: $secondary-color;
   color: $white-floral;
   font-size: $fs-xs;
@@ -12,6 +14,4 @@
     font-weight: $fw-bold;
     height: 100px;
   }
-
-  @include center;
 }
