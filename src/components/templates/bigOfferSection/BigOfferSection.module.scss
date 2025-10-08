@@ -1,9 +1,9 @@
 @import "../../../foundations/sass/all";
 
 .big-offer-section {
-  width: 100%;           // Cambio aquí
+  margin: 0;
   padding: 2rem 0;
-  margin: 0;  
+  width: 100%;           // Cambio aquí  
 
   &__heading {
     color: $big-offer-section-color;

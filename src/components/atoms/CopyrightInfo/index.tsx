@@ -1,1 +1,1 @@
-export { default } from "./CopyrightInfo";
+export { default } from './CopyrightInfo';

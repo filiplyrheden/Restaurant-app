@@ -1,8 +1,8 @@
-import { Meta } from "@storybook/nextjs";
-import PopularDishesSection from "./PopularDishesSection";
+import { Meta } from '@storybook/nextjs';
+import PopularDishesSection from './PopularDishesSection';
 
 const popularDishesSection: Meta<typeof PopularDishesSection> = {
-  title: "Templates/PopularDishesSection",
+  title: 'Templates/PopularDishesSection',
   component: PopularDishesSection,
 };
 

@@ -1,16 +1,16 @@
-import DeliveryOrderCard from "./DeliveryOrderCard";
+import DeliveryOrderCard from './DeliveryOrderCard';
 
 export const Default = {
   args: {
-    title: "Delivery Order",
-    tel: "+880 1630 225 015",
+    title: 'Delivery Order',
+    tel: '+880 1630 225 015',
   },
 };
 
 const deliveryOrderCard = {
-  title: "Atoms/DeliveryOrderCard",
+  title: 'Atoms/DeliveryOrderCard',
   component: DeliveryOrderCard,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   excludeStories: /.*Data$/,
 };
 

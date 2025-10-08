@@ -1,11 +1,11 @@
-import { Meta } from "@storybook/nextjs";
+import { Meta } from '@storybook/nextjs';
 
-import Stars from "./Stars";
+import Stars from './Stars';
 
 export default {
-  title: "Molecules/Stars",
+  title: 'Molecules/Stars',
   component: Stars,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 } satisfies Meta;
 
 export const Default = {

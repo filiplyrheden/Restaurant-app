@@ -8,6 +8,7 @@ import CopyrightInfo from '@/components/atoms/CopyrightInfo';
 import BranchSection from '@/components/atoms/BranchSection';
 import styles from './layout.module.scss';
 import HighlightSection from '@/components/templates/HighlightSection/HighlightSection';
+import TestimonialSection from '@/components/templates/testimonialSection/TestimonialSection';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${inter.className} ${styles.layout}`}>
         <Header /> <div className={styles.layout__content}>{children}</div>
         <HighlightSection />
+        <TestimonialSection />
         <BranchSection />
         <CopyrightInfo text={'\u00A9 2024 My Website. All rights reserved'} />
         <Analytics /> <SpeedInsights />

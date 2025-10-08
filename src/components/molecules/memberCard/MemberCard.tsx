@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./MemberCard.module.scss";
-import Image from "next/image";
-import SocialMediaBar from "@/components/atoms/social-media-bar/SocialMediaBar";
+import React from 'react';
+import styles from './MemberCard.module.scss';
+import Image from 'next/image';
+import SocialMediaBar from '@/components/atoms/social-media-bar/SocialMediaBar';
 
 interface SocialMedia {
   icon: string;
@@ -15,28 +15,23 @@ interface MemberCardProps {
   socialMedia: SocialMedia[];
 }
 
-const MemberCard: React.FC<MemberCardProps> = ({
-  name,
-  about,
-  image,
-  socialMedia,
-}) => {
+const MemberCard: React.FC<MemberCardProps> = ({ name, about, image, socialMedia }) => {
   return (
-    <div className={styles["member-card"]}>
-      <div className={styles["member-card__image-container"]}>
+    <div className={styles['member-card']}>
+      <div className={styles['member-card__image-container']}>
         <Image
-          className={styles["member-card__image-container-image"]}
+          className={styles['member-card__image-container-image']}
           src={image}
           alt={`${name}'s picture`}
           width={180}
           height={180}
         />
       </div>
-      <div className={styles["member-card__info"]}>
-        <h3 className={styles["member-card__info__name"]}>{name}</h3>
-        <p className={styles["member-card__info__about"]}>{about}</p>
+      <div className={styles['member-card__info']}>
+        <h3 className={styles['member-card__info__name']}>{name}</h3>
+        <p className={styles['member-card__info__about']}>{about}</p>
       </div>
-      <div className={styles["member-card__social-media"]}>
+      <div className={styles['member-card__social-media']}>
         <SocialMediaBar size="medium" socialMedias={socialMedia} />
       </div>
     </div>

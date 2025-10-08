@@ -1,9 +1,9 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import styles from "./ItemsPage.module.scss";
-import SecondaryHeaderPages from "@/components/templates/SecondaryHeaderPages";
-import SearchBar from "@/components/molecules/SearchBar";
-import ItemCard from "@/components/atoms/ItemCard";
+'use client';
+import React, { useState, useEffect } from 'react';
+import styles from './ItemsPage.module.scss';
+import SecondaryHeaderPages from '@/components/templates/SecondaryHeaderPages';
+import SearchBar from '@/components/molecules/SearchBar';
+import ItemCard from '@/components/atoms/ItemCard';
 
 interface ItemsPageProps {
   items: {
@@ -41,7 +41,7 @@ const ItemsPage: React.FC<ItemsPageProps> = ({ items }) => {
   };
 
   return (
-    <div className={styles["items-page"]}>
+    <div className={styles['items-page']}>
       <SecondaryHeaderPages
         backgroundImg="/images/itemsheadbg.png"
         title="items"
@@ -50,11 +50,11 @@ const ItemsPage: React.FC<ItemsPageProps> = ({ items }) => {
         <h3>It&apos;s the food and groceries you love, delivered</h3>
       </SecondaryHeaderPages>
 
-      <div className={styles["items-page-searchbox"]}>
+      <div className={styles['items-page-searchbox']}>
         <SearchBar onSearch={handleSearch} />
       </div>
 
-      <div className={styles["items-page-container"]}>
+      <div className={styles['items-page-container']}>
         {filteredItems.map((item, index) => {
           return <ItemCard key={index} {...item} />;
         })}

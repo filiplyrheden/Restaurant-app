@@ -1,8 +1,8 @@
-import { Meta } from "@storybook/nextjs";
-import BigOfferSection from "./BigOfferSection";
+import { Meta } from '@storybook/nextjs';
+import BigOfferSection from './BigOfferSection';
 
 const bigOfferSection: Meta<typeof BigOfferSection> = {
-  title: "Templates/BigOfferSection",
+  title: 'Templates/BigOfferSection',
   component: BigOfferSection,
 };
 

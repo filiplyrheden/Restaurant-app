@@ -1,1 +1,1 @@
-export { default } from "./BasketButton";
+export { default } from './BasketButton';

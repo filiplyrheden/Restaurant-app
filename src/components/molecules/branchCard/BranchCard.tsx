@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "./BranchCard.module.scss";
-import Image from "next/image";
-import InfoCard from "@/components/atoms/infoCard/InfoCard";
-import Link from "next/link";
+import React from 'react';
+import styles from './BranchCard.module.scss';
+import Image from 'next/image';
+import InfoCard from '@/components/atoms/infoCard/InfoCard';
+import Link from 'next/link';
 
 interface BranchCardProps {
   name: string;
@@ -12,19 +12,13 @@ interface BranchCardProps {
   tel: string;
 }
 
-const BranchCard: React.FC<BranchCardProps> = ({
-  name,
-  address,
-  time,
-  tel,
-  location,
-}) => {
+const BranchCard: React.FC<BranchCardProps> = ({ name, address, time, tel, location }) => {
   return (
-    <div className={styles["branch-card"]}>
-      <div className={styles["branch-card__info"]}>
-        <h3 className={styles["branch-card__info__name"]}>{name}</h3>
-        <p className={styles["branch-card__info__address"]}>{address}</p>
-        <div className={styles["branch-card__info__info_block"]}>
+    <div className={styles['branch-card']}>
+      <div className={styles['branch-card__info']}>
+        <h3 className={styles['branch-card__info__name']}>{name}</h3>
+        <p className={styles['branch-card__info__address']}>{address}</p>
+        <div className={styles['branch-card__info__info_block']}>
           <InfoCard
             icon={
               <Image
@@ -32,7 +26,7 @@ const BranchCard: React.FC<BranchCardProps> = ({
                 alt="Watch"
                 width={20}
                 height={20}
-                className={styles["branch-card__info__info_block__icon"]}
+                className={styles['branch-card__info__info_block__icon']}
               />
             }
             title={time}
@@ -44,13 +38,13 @@ const BranchCard: React.FC<BranchCardProps> = ({
                 alt="Phone"
                 width={20}
                 height={20}
-                className={styles["branch-card__info__info_block__icon"]}
+                className={styles['branch-card__info__info_block__icon']}
               />
             }
             title={tel}
           />
         </div>
-        <Link href={location} className={styles["branch-card__info__location"]}>
+        <Link href={location} className={styles['branch-card__info__location']}>
           Click to View Google Map
         </Link>
       </div>

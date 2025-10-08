@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./CopyrightInfo.module.scss";
+import React from 'react';
+import styles from './CopyrightInfo.module.scss';
 
 interface CopyrightInfoProps {
   text: string;
@@ -7,7 +7,7 @@ interface CopyrightInfoProps {
 
 const CopyrightInfo: React.FC<CopyrightInfoProps> = ({ text }) => {
   return (
-    <div className={`${styles["copyright-info"]} `}>
+    <div className={`${styles['copyright-info']} `}>
       <span>{text}</span>
     </div>
   );
