@@ -1,29 +1,23 @@
-"use client";
-import React from "react";
-import styles from "./BigOfferSection.module.scss";
-import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Pagination,
-  Navigation,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import BigOfferCard from "@/components/atoms/BigOfferCard";
+'use client';
+import React from 'react';
+import styles from './BigOfferSection.module.scss';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import BigOfferCard from '@/components/atoms/BigOfferCard';
 
 const BigOfferSection = () => {
   return (
-    <div className={styles["big-offer-section"]}>
-      <h2 className={styles["big-offer-section__heading"]}>Big Offer</h2>
-      <p className={styles["big-offer-section__subheading"]}>
+    <div className={styles['big-offer-section']}>
+      <h2 className={styles['big-offer-section__heading']}>Big Offer</h2>
+      <p className={styles['big-offer-section__subheading']}>
         For in this week, take your food, buy your best one.
       </p>
       <Swiper
         modules={[Pagination, Navigation, Scrollbar, A11y, Autoplay]}
         centeredSlides={true}
-        onSlideChange={() => console.log("slide change")}
+        onSlideChange={() => console.log('slide change')}
         initialSlide={1}
         loop
         breakpoints={{

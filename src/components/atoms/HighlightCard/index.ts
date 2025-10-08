@@ -1,1 +1,1 @@
-export { default } from "./HighlightCard";
+export { default } from './HighlightCard';

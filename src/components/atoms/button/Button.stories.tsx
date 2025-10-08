@@ -1,37 +1,37 @@
-import Button from "./Button";
+import Button from './Button';
 
 export const Default = {
   args: {
-    children: "Button",
-    size: "medium",
+    children: 'Button',
+    size: 'medium',
   },
 };
 
 export const Small = {
   args: {
-    children: "Button",
-    size: "small",
+    children: 'Button',
+    size: 'small',
   },
 };
 
 export const Medium = {
   args: {
-    children: "Button",
-    size: "medium",
+    children: 'Button',
+    size: 'medium',
   },
 };
 
 export const Large = {
   args: {
-    children: "Go",
-    size: "large",
+    children: 'Go',
+    size: 'large',
   },
 };
 
 const buttonConfig = {
-  title: "Atoms/Button",
+  title: 'Atoms/Button',
   component: Button,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   excludeStories: /.*Data$/,
 };
 

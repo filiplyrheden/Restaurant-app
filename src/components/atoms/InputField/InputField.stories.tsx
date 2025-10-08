@@ -1,11 +1,11 @@
-import { Meta } from "@storybook/nextjs";
-import React, { useState } from "react";
-import InputField from "./InputField";
+import { Meta } from '@storybook/nextjs';
+import React, { useState } from 'react';
+import InputField from './InputField';
 
 const inputField: Meta<typeof InputField> = {
-  title: "Atoms/InputField",
+  title: 'Atoms/InputField',
   component: InputField,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 type InputFieldProps = React.ComponentProps<typeof InputField>;

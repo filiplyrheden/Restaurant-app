@@ -1,8 +1,8 @@
-import { Meta } from "@storybook/nextjs";
-import HighlightSection from "./HighlightSection";
+import { Meta } from '@storybook/nextjs';
+import HighlightSection from './HighlightSection';
 
 const highlightSection: Meta<typeof HighlightSection> = {
-  title: "Templates/HighlightSection",
+  title: 'Templates/HighlightSection',
   component: HighlightSection,
 };
 

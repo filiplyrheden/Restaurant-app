@@ -1,1 +1,1 @@
-export { default } from "./AuthSection";
+export { default } from './AuthSection';

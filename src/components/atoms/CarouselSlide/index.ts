@@ -1,1 +1,1 @@
-export { default } from "./CarouselSlide";
+export { default } from './CarouselSlide';

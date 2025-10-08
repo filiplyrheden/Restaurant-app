@@ -1,11 +1,11 @@
-import BranchSection from "./BranchSection";
+import BranchSection from './BranchSection';
 
 export const Default = {};
 
 const headerConfig = {
-  title: "Atoms/Branch",
+  title: 'Atoms/Branch',
   component: BranchSection,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   excludeStories: /.*Data$/,
 };
 

@@ -1,11 +1,11 @@
-import { Meta } from "@storybook/nextjs";
-import React, { SetStateAction } from "react";
-import SearchBar from "./SearchBar";
+import { Meta } from '@storybook/nextjs';
+import React, { SetStateAction } from 'react';
+import SearchBar from './SearchBar';
 
 const searchBar: Meta<typeof SearchBar> = {
-  title: "Molecules/SearchBar",
+  title: 'Molecules/SearchBar',
   component: SearchBar,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 type SearchBarProps = React.ComponentProps<typeof SearchBar>;

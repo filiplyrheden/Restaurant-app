@@ -1,7 +1,7 @@
-import React, { FC } from "react";
-import styles from "./PopularDishCard.module.scss";
-import Link from "next/link";
-import Image from "next/image";
+import React, { FC } from 'react';
+import styles from './PopularDishCard.module.scss';
+import Link from 'next/link';
+import Image from 'next/image';
 
 type PopularDishCardProps = {
   image: string;
@@ -16,8 +16,8 @@ const PopularDishCard: FC<PopularDishCardProps> = ({ image, link }) => {
         width={229}
         height={120}
         alt="Popular dish"
-        style={{ objectFit: "cover" }}
-        className={styles["popular-dish"]}
+        style={{ objectFit: 'cover' }}
+        className={styles['popular-dish']}
       />
     </Link>
   );

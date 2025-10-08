@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./InputField.module.scss";
+import React from 'react';
+import styles from './InputField.module.scss';
 
 interface InputFieldProps {
   value: string;
@@ -8,12 +8,7 @@ interface InputFieldProps {
   disabled?: boolean;
 }
 
-const InputField: React.FC<InputFieldProps> = ({
-  value,
-  onChange,
-  placeholder,
-  disabled,
-}) => {
+const InputField: React.FC<InputFieldProps> = ({ value, onChange, placeholder, disabled }) => {
   return (
     <div>
       <input
@@ -22,7 +17,7 @@ const InputField: React.FC<InputFieldProps> = ({
         onChange={onChange}
         placeholder={placeholder}
         disabled={disabled}
-        className={styles["input-field"]}
+        className={styles['input-field']}
       />
     </div>
   );

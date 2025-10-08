@@ -1,11 +1,11 @@
-"use client";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import styles from "./MainCarousel.module.scss";
-import CarouselSlide from "@/components/atoms/CarouselSlide";
-import "swiper/css";
-import "swiper/css/pagination";
+'use client';
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import styles from './MainCarousel.module.scss';
+import CarouselSlide from '@/components/atoms/CarouselSlide';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 interface MainCarouselProps {
   slides: {

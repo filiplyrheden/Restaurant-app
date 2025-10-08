@@ -1,8 +1,8 @@
-import { Meta } from "@storybook/nextjs";
-import TestimonialSection from "./TestimonialSection";
+import { Meta } from '@storybook/nextjs';
+import TestimonialSection from './TestimonialSection';
 
 const testimonialSection: Meta<typeof TestimonialSection> = {
-  title: "Templates/TestimonialSection",
+  title: 'Templates/TestimonialSection',
   component: TestimonialSection,
 };
 

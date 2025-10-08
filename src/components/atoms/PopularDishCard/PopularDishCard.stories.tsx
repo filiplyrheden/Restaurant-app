@@ -1,17 +1,17 @@
-import { Meta } from "@storybook/nextjs";
-import PopularDishCard from "./PopularDishCard";
+import { Meta } from '@storybook/nextjs';
+import PopularDishCard from './PopularDishCard';
 
 const PopularDishCardConfig: Meta = {
-  title: "atoms/PopularDishCard",
+  title: 'atoms/PopularDishCard',
   component: PopularDishCard,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   excludeStories: /.*Data$/,
 };
 
 export const Default = {
   args: {
-    link: "#",
-    image: "/images/popular_image.png",
+    link: '#',
+    image: '/images/popular_image.png',
   },
 };
 

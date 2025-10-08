@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./SecondaryHeaderPages.module.scss";
+import React from 'react';
+import styles from './SecondaryHeaderPages.module.scss';
 
 type SecondaryHeaderProps = {
   title: string;
@@ -17,10 +17,10 @@ const SecondaryHeaderPages: React.FC<SecondaryHeaderProps> = ({
   return (
     <>
       <section
-        className={styles["secondary-header"]}
+        className={styles['secondary-header']}
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
-        <div className={styles["secondary-header--textContent"]}>
+        <div className={styles['secondary-header--textContent']}>
           <h2>{title}</h2>
           <p>{textContent}</p>
         </div>

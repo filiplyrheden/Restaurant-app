@@ -1,6 +1,6 @@
-import { FC } from "react";
-import styles from "./Navbar.module.scss";
-import Link from "next/link";
+import { FC } from 'react';
+import styles from './Navbar.module.scss';
+import Link from 'next/link';
 
 type NavBar = {
   title: string;
@@ -12,13 +12,9 @@ type NavBarProps = {
 
 const NavBar: FC<NavBarProps> = ({ navItems }) => {
   return (
-    <nav className={`${styles["navbar"]}`}>
+    <nav className={`${styles['navbar']}`}>
       {navItems.map((items, index) => (
-        <Link
-          key={index}
-          href={items.href}
-          className={`${styles["navbar__items"]}`}
-        >
+        <Link key={index} href={items.href} className={`${styles['navbar__items']}`}>
           {items.title}
         </Link>
       ))}

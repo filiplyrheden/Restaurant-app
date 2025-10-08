@@ -1,6 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import styles from "./SpecialMealCard.module.scss";
+import React from 'react';
+import Image from 'next/image';
+import styles from './SpecialMealCard.module.scss';
 
 interface SpecialMealCardProps {
   image: string;
@@ -10,15 +10,15 @@ interface SpecialMealCardProps {
 const SpecialMealCard: React.FC<SpecialMealCardProps> = ({ image, title }) => {
   return (
     <article className={styles.card}>
-      <figure className={styles["card__box"]}>
+      <figure className={styles['card__box']}>
         <Image
           src={image}
           height={200}
           width={250}
           alt={title}
-          className={styles["card__box__img"]}
+          className={styles['card__box__img']}
         />
-        <figcaption className={styles["card__box__title"]}>{title}</figcaption>
+        <figcaption className={styles['card__box__title']}>{title}</figcaption>
       </figure>
     </article>
   );
