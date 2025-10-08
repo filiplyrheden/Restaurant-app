@@ -1,17 +1,17 @@
-import { Meta } from "@storybook/nextjs";
-import MainCarousel from "./MainCarousel";
+import { Meta } from '@storybook/nextjs';
+import MainCarousel from './MainCarousel';
 
 const slides = Array.from({ length: 5 }, (item, index) => ({
   id: index,
-  image: "/images/image1.png",
-  dishname: "Burger",
-  price: "10.89",
-  link: "/",
+  image: '/images/image1.png',
+  dishname: 'Burger',
+  price: '10.89',
+  link: '/',
   socialMedia: [
-    { icon: "icons/instagram.svg", href: "/" },
-    { icon: "icons/facebook.svg", href: "/" },
-    { icon: "icons/twitter.svg", href: "/" },
-    { icon: "icons/linkedin.svg", href: "/" },
+    { icon: 'icons/instagram.svg', href: '/' },
+    { icon: 'icons/facebook.svg', href: '/' },
+    { icon: 'icons/twitter.svg', href: '/' },
+    { icon: 'icons/linkedin.svg', href: '/' },
   ],
 }));
 
@@ -20,9 +20,9 @@ export const Default = {
 };
 
 const mainCarousel: Meta<typeof MainCarousel> = {
-  title: "Molecules/MainCarousel",
+  title: 'Molecules/MainCarousel',
   component: MainCarousel,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   excludeStories: /.*Data$/,
   decorators: [
     (Story) => {

@@ -1,11 +1,11 @@
-import Banner from "./Banner";
+import Banner from './Banner';
 
 export const Default = {};
 
 const basketButtonConfig = {
-  title: "Atoms/Banner",
+  title: 'Atoms/Banner',
   component: Banner,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   excludeStories: /.*Data$/,
 };
 

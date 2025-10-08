@@ -1,11 +1,11 @@
-import AuthSection from "./AuthSection";
+import AuthSection from './AuthSection';
 
 export const Default = {};
 
 const headerConfig = {
-  title: "Molecules/AuthSection",
+  title: 'Molecules/AuthSection',
   component: AuthSection,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   excludeStories: /.*Data$/,
 };
 

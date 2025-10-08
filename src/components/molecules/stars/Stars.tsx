@@ -1,11 +1,11 @@
-import React, { FC } from "react";
-import styles from "./Stars.module.scss";
+import React, { FC } from 'react';
+import styles from './Stars.module.scss';
 interface StarsProps {
   count: number;
 }
 const Stars: FC<StarsProps> = ({ count }) => {
   return (
-    <div className={styles["stars"]}>
+    <div className={styles['stars']}>
       {[...Array(5)].map((_, i) => {
         if (i >= count)
           return (

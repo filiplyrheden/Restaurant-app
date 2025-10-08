@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./MenuItem.module.scss";
+import React from 'react';
+import styles from './MenuItem.module.scss';
 
 interface MenuItemProps {
   name: string;
@@ -9,14 +9,12 @@ interface MenuItemProps {
 
 const MenuItem: React.FC<MenuItemProps> = ({ name, ingredients, price }) => {
   return (
-    <div className={styles["menu-item"]}>
-      <div className={styles["menu-item__info-box"]}>
-        <h4 className={styles["menu-item__info-box__title"]}>{name}</h4>
-        <p className={styles["menu-item__info-box__ingredients"]}>
-          {ingredients}
-        </p>
+    <div className={styles['menu-item']}>
+      <div className={styles['menu-item__info-box']}>
+        <h4 className={styles['menu-item__info-box__title']}>{name}</h4>
+        <p className={styles['menu-item__info-box__ingredients']}>{ingredients}</p>
       </div>
-      <div className={styles["menu-item__price-box"]}>
+      <div className={styles['menu-item__price-box']}>
         <span>{`$${price}`}</span>
       </div>
     </div>

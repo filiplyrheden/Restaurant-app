@@ -1,21 +1,14 @@
-import React from "react";
-import styles from "./Button.module.scss";
+import React from 'react';
+import styles from './Button.module.scss';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  size: "small" | "medium" | "large";
+  size: 'small' | 'medium' | 'large';
 }
 
-const Button: React.FC<ButtonProps> = ({
-  children,
-  size = "medium",
-  ...props
-}) => {
+const Button: React.FC<ButtonProps> = ({ children, size = 'medium', ...props }) => {
   return (
-    <button
-      className={`${styles.button} ${styles[`button--${size}`]}`}
-      {...props}
-    >
+    <button className={`${styles.button} ${styles[`button--${size}`]}`} {...props}>
       {children}
     </button>
   );

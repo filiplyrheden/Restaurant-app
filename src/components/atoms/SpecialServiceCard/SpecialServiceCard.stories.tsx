@@ -1,30 +1,26 @@
-import React from "react";
-import { Meta, StoryFn } from "@storybook/nextjs";
-import SpecialServiceCard, {
-  SpecialServiceCardProps,
-} from "./SpecialServiceCard";
+import React from 'react';
+import { Meta, StoryFn } from '@storybook/nextjs';
+import SpecialServiceCard, { SpecialServiceCardProps } from './SpecialServiceCard';
 
 // Define metadata for the Storybook story
 const meta: Meta = {
-  title: "atoms/SpecialServiceCard",
+  title: 'atoms/SpecialServiceCard',
   component: SpecialServiceCard,
   parameters: {
-    layout: "centered",
+    layout: 'centered',
   },
 };
 
 export default meta;
 
 // Define a template for the stories
-const Template: StoryFn<SpecialServiceCardProps> = (args) => (
-  <SpecialServiceCard {...args} />
-);
+const Template: StoryFn<SpecialServiceCardProps> = (args) => <SpecialServiceCard {...args} />;
 
 // Default story
 export const Default = Template.bind({});
 Default.args = {
-  title: "Amazing Service",
-  description: "This service provides incredible value and benefits.",
+  title: 'Amazing Service',
+  description: 'This service provides incredible value and benefits.',
 };
 
 // Story with custom title and description
@@ -41,13 +37,13 @@ CustomContent.args = {
 // Story with only title
 export const OnlyTitle = Template.bind({});
 OnlyTitle.args = {
-  title: "Title Only",
-  description: "",
+  title: 'Title Only',
+  description: '',
 };
 
 // Story with only description
 export const OnlyDescription = Template.bind({});
 OnlyDescription.args = {
-  title: "",
-  description: "Description Only",
+  title: '',
+  description: 'Description Only',
 };

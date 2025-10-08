@@ -1,8 +1,8 @@
-import styles from "./CarouselSlide.module.scss";
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import SocialMediaBar from "../social-media-bar/SocialMediaBar";
+import styles from './CarouselSlide.module.scss';
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import SocialMediaBar from '../social-media-bar/SocialMediaBar';
 
 interface SocialMedia {
   icon: string;
@@ -26,33 +26,33 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
 }) => {
   return (
     <>
-      <div className={styles["swiper-slide"]}>
-        <div className={styles["swiper-slide--main"]}>
-          <div className={styles["swiper-slide--main--headings"]}>
+      <div className={styles['swiper-slide']}>
+        <div className={styles['swiper-slide--main']}>
+          <div className={styles['swiper-slide--main--headings']}>
             <h4>Best In Town</h4>
             <h2>
               Enjoy Our Chicken <span>{dishname}</span> Fast Food
             </h2>
           </div>
-          <div className={styles["swiper-slide--main--image"]}>
+          <div className={styles['swiper-slide--main--image']}>
             <Image
               src={image}
               alt={dishname}
               width={438}
               height={292}
-              style={{ objectFit: "contain" }}
+              style={{ objectFit: 'contain' }}
             />
           </div>
         </div>
-        <div className={styles["swiper-slide--main--cta"]}>
-          <Link href={link}>Order Now</Link>{" "}
+        <div className={styles['swiper-slide--main--cta']}>
+          <Link href={link}>Order Now</Link>{' '}
           <p>
             Price: <span>${price}</span>
           </p>
         </div>
       </div>
-      <div className={styles["swiper-slide--socials"]}>
-        <SocialMediaBar size={"small"} socialMedias={socialMedia} />
+      <div className={styles['swiper-slide--socials']}>
+        <SocialMediaBar size={'small'} socialMedias={socialMedia} />
       </div>
     </>
   );

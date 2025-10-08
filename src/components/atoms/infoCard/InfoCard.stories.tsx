@@ -1,5 +1,5 @@
-import { FC } from "react";
-import InfoCard from "./InfoCard";
+import { FC } from 'react';
+import InfoCard from './InfoCard';
 
 export const Default = {
   args: {
@@ -17,18 +17,18 @@ export const Default = {
         />
       </svg>
     ),
-    title: "7.30 AM - 9.30 PM",
+    title: '7.30 AM - 9.30 PM',
   },
 };
 
 const infoCardConfig = {
-  title: "Atoms/InfoCard",
+  title: 'Atoms/InfoCard',
   component: InfoCard,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   excludeStories: /.*Data$/,
   decorators: [
     (Story: FC) => (
-      <div style={{ backgroundColor: " #c33" }}>
+      <div style={{ backgroundColor: ' #c33' }}>
         <Story />
       </div>
     ),

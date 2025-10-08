@@ -1,11 +1,11 @@
-import Header from "./Header";
+import Header from './Header';
 
 export const Default = {};
 
 const headerConfig = {
-  title: "Molecules/Header",
+  title: 'Molecules/Header',
   component: Header,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   excludeStories: /.*Data$/,
 };
 

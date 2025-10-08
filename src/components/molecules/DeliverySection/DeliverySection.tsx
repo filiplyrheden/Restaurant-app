@@ -1,36 +1,35 @@
-import React from "react";
-import DeliveryOrderCard from "@/components/atoms/deliveryOrderCard";
-import Button from "@/components/atoms/button/Button";
-import Image from "next/image";
-import styles from "./DeliverySection.module.scss";
+import React from 'react';
+import DeliveryOrderCard from '@/components/atoms/deliveryOrderCard';
+import Button from '@/components/atoms/button/Button';
+import Image from 'next/image';
+import styles from './DeliverySection.module.scss';
 
 const DeliverySection = () => {
   return (
-    <div className={styles["delivery-section"]}>
-      <h2 className={styles["delivery-section__sectionTitle"]}>Delivery</h2>
-      <div className={styles["delivery-section__content"]}>
-        <div className={styles["delivery-section__left"]}>
-          <h2 className={styles["delivery-section__left__title"]}>
+    <div className={styles['delivery-section']}>
+      <h2 className={styles['delivery-section__sectionTitle']}>Delivery</h2>
+      <div className={styles['delivery-section__content']}>
+        <div className={styles['delivery-section__left']}>
+          <h2 className={styles['delivery-section__left__title']}>
             A Moments Of <span>Delivered On Right Time & Place</span>
           </h2>
           <p>
-            Food Khan is a restaurant, bar and coffee roastery located on a busy
-            corner site in Farringdon&apos;s Exmouth Market. With glazed
-            frontage on two sides of the building, overlooking the market and a
-            bustling London inteon.
+            Food Khan is a restaurant, bar and coffee roastery located on a busy corner site in
+            Farringdon&apos;s Exmouth Market. With glazed frontage on two sides of the building,
+            overlooking the market and a bustling London inteon.
           </p>
-          <div className={styles["delivery-section__delivery-order-card"]}>
+          <div className={styles['delivery-section__delivery-order-card']}>
             <DeliveryOrderCard title="Delivery Order" tel="+880 1630 225 015" />
             <Button size="small">Order Now</Button>
           </div>
         </div>
         <Image
           src="/images/image_delivery_section.png"
-          alt={"food delivery"}
-          className={styles["delivery-section__image"]}
+          alt={'food delivery'}
+          className={styles['delivery-section__image']}
           width={447}
           height={330}
-          style={{ objectFit: "contain" }}
+          style={{ objectFit: 'contain' }}
         />
       </div>
     </div>

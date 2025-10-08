@@ -1,16 +1,16 @@
-import RichAndHealthy from "./RichAndHealthy";
-import { FC } from "react";
+import RichAndHealthy from './RichAndHealthy';
+import { FC } from 'react';
 
 export const Default = {};
 
 const richAndHealthyConfig = {
-  title: "Molecules/RichAndHealthy",
+  title: 'Molecules/RichAndHealthy',
   component: RichAndHealthy,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   excludeStories: /.*Data$/,
   decorators: [
     (Story: FC) => (
-      <div style={{ backgroundColor: "#fff8ee" }}>
+      <div style={{ backgroundColor: '#fff8ee' }}>
         <Story />
       </div>
     ),

@@ -1,1 +1,1 @@
-export { default } from "./DeliveryOrderCard";
+export { default } from './DeliveryOrderCard';

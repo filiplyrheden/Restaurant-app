@@ -1,1 +1,1 @@
-export { default } from "./BranchCard";
+export { default } from './BranchCard';

@@ -1,1 +1,1 @@
-export { default } from "./RichAndHealthy";
+export { default } from './RichAndHealthy';

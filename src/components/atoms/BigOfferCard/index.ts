@@ -1,1 +1,1 @@
-export { default } from "./BigOfferCard";
+export { default } from './BigOfferCard';

@@ -1,4 +1,4 @@
-import BasketButton from "./BasketButton";
+import BasketButton from './BasketButton';
 
 export const Default = {
   args: {
@@ -7,9 +7,9 @@ export const Default = {
 };
 
 const basketButtonConfig = {
-  title: "Atoms/BasketButton",
+  title: 'Atoms/BasketButton',
   component: BasketButton,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   excludeStories: /.*Data$/,
 };
 

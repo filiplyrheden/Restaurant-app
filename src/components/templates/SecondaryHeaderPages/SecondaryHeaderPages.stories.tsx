@@ -1,10 +1,10 @@
-import { Meta } from "@storybook/nextjs";
-import SecondaryHeaderPages from "./SecondaryHeaderPages";
+import { Meta } from '@storybook/nextjs';
+import SecondaryHeaderPages from './SecondaryHeaderPages';
 
 const secondaryHeaderPages: Meta<typeof SecondaryHeaderPages> = {
-  title: "Templates/SecondaryHeaderPages",
+  title: 'Templates/SecondaryHeaderPages',
   component: SecondaryHeaderPages,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
   decorators: [
     (Story) => {
       return (
@@ -18,10 +18,10 @@ const secondaryHeaderPages: Meta<typeof SecondaryHeaderPages> = {
 
 export const Default = {
   args: {
-    title: "ITEMS",
-    backgroundImg: "/images/itemsheadbg.png",
+    title: 'ITEMS',
+    backgroundImg: '/images/itemsheadbg.png',
     textContent:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna.",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius mod tempor incididunt ut labore et dolore magna.',
   },
 };
 

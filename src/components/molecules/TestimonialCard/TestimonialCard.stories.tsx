@@ -1,21 +1,21 @@
-import { Meta } from "@storybook/nextjs";
-import TestimonialCard from "./TestimonialCard";
+import { Meta } from '@storybook/nextjs';
+import TestimonialCard from './TestimonialCard';
 
 export const Default = {
   args: {
-    name: "Robert Food",
+    name: 'Robert Food',
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ",
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
     rating: 4,
-    image: "/images/man.jpg",
+    image: '/images/man.jpg',
     isActive: true,
   },
 };
 
 const TestimonialCardConfig: Meta<typeof TestimonialCard> = {
-  title: "Molecules/TestimonialCard",
+  title: 'Molecules/TestimonialCard',
   component: TestimonialCard,
-  tags: ["autodocs"],
+  tags: ['autodocs'],
 };
 
 export default TestimonialCardConfig;
