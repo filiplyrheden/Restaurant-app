@@ -46,46 +46,46 @@ const PopularDishesSection = () => {
           },
         }}
         autoplay={{
-          delay: 3000,
+          delay: 1500,
           disableOnInteraction: false,
         }}
         scrollbar={{ draggable: false }}
       >
         <SwiperSlide>
-          <PopularDishCard image="/images/popular_image.png" link={"#"} />
+          <PopularDishCard image="/images/image_Dishes_1.png" link={"#"} />
         </SwiperSlide>
         <SwiperSlide>
-          <PopularDishCard image="/images/popular_image.png" link={"#"} />
+          <PopularDishCard image="/images/image_Dishes_2.png" link={"#"} />
         </SwiperSlide>
         <SwiperSlide>
-          <PopularDishCard image="/images/popular_image.png" link={"#"} />
+          <PopularDishCard image="/images/image_Dishes_3.png" link={"#"} />
         </SwiperSlide>
         <SwiperSlide>
-          <PopularDishCard image="/images/popular_image.png" link={"#"} />
+          <PopularDishCard image="/images/image_Dishes_4.png" link={"#"} />
         </SwiperSlide>
         <SwiperSlide>
-          <PopularDishCard image="/images/popular_image.png" link={"#"} />
+          <PopularDishCard image="/images/image_Dishes_5.png" link={"#"} />
         </SwiperSlide>
         <SwiperSlide>
-          <PopularDishCard image="/images/popular_image.png" link={"#"} />
+          <PopularDishCard image="/images/image_Dishes_6.png" link={"#"} />
         </SwiperSlide>
         <SwiperSlide>
-          <PopularDishCard image="/images/popular_image.png" link={"#"} />
+          <PopularDishCard image="/images/image_Dishes_1.png" link={"#"} />
         </SwiperSlide>
         <SwiperSlide>
-          <PopularDishCard image="/images/popular_image.png" link={"#"} />
+          <PopularDishCard image="/images/image_Dishes_3.png" link={"#"} />
         </SwiperSlide>
         <SwiperSlide>
-          <PopularDishCard image="/images/popular_image.png" link={"#"} />
+          <PopularDishCard image="/images/image_Dishes_4.png" link={"#"} />
         </SwiperSlide>
         <SwiperSlide>
-          <PopularDishCard image="/images/popular_image.png" link={"#"} />
+          <PopularDishCard image="/images/image_Dishes_5.png" link={"#"} />
         </SwiperSlide>
         <SwiperSlide>
-          <PopularDishCard image="/images/popular_image.png" link={"#"} />
+          <PopularDishCard image="/images/image_Dishes_6.png" link={"#"} />
         </SwiperSlide>
         <SwiperSlide>
-          <PopularDishCard image="/images/popular_image.png" link={"#"} />
+          <PopularDishCard image="/images/image_Dishes_3.png" link={"#"} />
         </SwiperSlide>
       </Swiper>
     </div>
